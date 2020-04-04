@@ -7,7 +7,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -134,7 +134,7 @@
 
 
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -143,7 +143,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -309,61 +309,73 @@
 <p>Quantum PageRank Class:</p>
 <p>P1: The classical PageRank must be embedded into the quantum class in such a way that the directed graph structure is preserved at the quantum level.<br>P2: The sum of all quantum PageRanks must add to 1 i.e. $\Sigma_{i} I_{q}\left(P_{i}\right)=1$.<br>P3: The Q-PageRank admits a quantized Markov Chain (MC) description.<br>P4: The classical algorithm to compute the quantum PageRank belongs to the computational complexity class P.</p>
 <p>The crucial difference is the substitution of property Q4 that deals with the feasibility of calculations with a quantum computer in poly-nomial time by property P4 which is more demanding since it means that even a classical computer can simulate the process and find the importance of webpages in polynomial time.</p>
-<p>Property P1 reflects the fact that originally we would have an internet that is a classical network represented by a directed graph and then shall apply some kind of quantization procedure in order to turn it into a quantum network. The latter must be compatible with the classical one, particularly preserving the directed structure which is crucial to measure a page’s authority. This is non-trivial and some quantization methods may fail to produce a unitary quantum PageRank importance for the quantum case, as shown in Sect. <em>Results: Quantum PageRanks</em>.</p>
-<p>With property P2 we guarantee that we have a globally well-defined notion of the importance of a web page at the quantum level. This allows us to have the probabilistic interpretation of the surfer’s position (see Sect. <em>Results: Quantum PageRanks</em>).</p>
-<p>Property P3 is the key to a wide class of natural quantization methods for the classical PageRank based in the equivalence of this one with a classical Markov chain process (see Sect. <em>Results: Quantum PageRanks</em>). Thus, it is natural that the equivalent property holds true in the quantum version of the PageRank, and conse-quently, its description in terms of a quantized surfer’s motion.</p>
+<p>Property P1 reflects the fact that originally we would have an internet that is a classical network represented by a directed graph and then shall apply some kind of quantization procedure in order to turn it into a quantum network. The latter must be compatible with the classical one, particularly preserving the directed structure which is crucial to measure a page’s authority. This is non-trivial and some quantization methods may fail to produce a unitary quantum PageRank importance for the quantum case, as shown in Sect. _Results: Quantum PageRanks_.</p>
+<p>With property P2 we guarantee that we have a globally well-defined notion of the importance of a web page at the quantum level. This allows us to have the probabilistic interpretation of the surfer’s position (see Sect. _Results: Quantum PageRanks_).</p>
+<p>Property P3 is the key to a wide class of natural quantization methods for the classical PageRank based in the equivalence of this one with a classical Markov chain process (see Sect. _Results: Quantum PageRanks_). Thus, it is natural that the equivalent property holds true in the quantum version of the PageRank, and conse-quently, its description in terms of a quantized surfer’s motion.</p>
 <p>The reason for property P4 relies on the assumption that we envisage a near-future scenario when a certain class of quantum network will be operative but not yet a scalable quantum computer. Therefore, we demand that the computation of the quantum PageRank $I_q$ be efficiently carried out on a classical computer.</p>
 <p>In this paper we have constructed a valid quantum PageRank that fulfills all these requirements. We remark that there may be other solutions to the quantum version of the PageRank within the class defined above, but nevertheless we shall show that finding one instance of this quantum PageRank class is a non-trivial task.</p>
 <p>The definition of Class of Quantum PageRank given here is very general and it can accommodate very diverse situations, ranging from quantum channels (including entangled states) between nodes in the network to simpler situations where network nodes are quantum levels of a multilevel quantum system where information is stored in the same way as in the Grover algorithm.In the particular instance of Quantum PageRank algorithm that we have found in subsection Results: A Quantization of Google PageRank, we are concerned with the latter case of a multilevel quantum systems where the quantum state is attached to a link of the network of nodes. This instance does not exhaust all possibilities represented in our generic Class of Quantum PageRanks by all means, but it is the first non-trivial instance in which sharp deviations from the classical PageRank algorithm can be found, as explained later on in our paper.</p>
-<p>The explicit step-by-step description of our quantum PageRank algorithm is presented in Sect. <em>Results: A Quantization of Google PageRank</em>. A key distinctive feature of this quantum algorithm is that the importance of the quantum pages exhibit quantum fluctuations unlike its classical counterpart. These quantum fluctuations,as shown in the simulations in Sect. <em>Results: Simulations for Quantum PageRanks</em>, show up in the form of time dependent importances $I_q(P_i, t)$, which causes in turn that sometimes one certain pair of pages satisfy $I_q(P_i, t_1) &gt;I_q(P_j, t_1)$, and some other times the relative importance is reversed $I_q(P_i, t_2) &gt;I_q(P_j, t_2)$, for time-steps such that $t_1&lt;t_2$. We may use an analogy to understand this situation: the classical PageRank gives us a snapshot or photo with a fixed hierarchy of web pages according to their calculated importance. On the contrary, the quantum PageRank is more like a movie since the quantum importance of the pages vary with time. In order to produce a fixed output made of a list with the quantum pages sorted according to their importance, a natural choice we make is to compute the temporal average of the quantum PageRanks and their standard mean deviation.</p>
+<p>The explicit step-by-step description of our quantum PageRank algorithm is presented in Sect. _Results: A Quantization of Google PageRank_. A key distinctive feature of this quantum algorithm is that the importance of the quantum pages exhibit quantum fluctuations unlike its classical counterpart. These quantum fluctuations,as shown in the simulations in Sect. _Results: Simulations for Quantum PageRanks_, show up in the form of time dependent importances $I_q(P_i, t)$, which causes in turn that sometimes one certain pair of pages satisfy $I_q(P_i, t_1) &gt;I_q(P_j, t_1)$, and some other times the relative importance is reversed $I_q(P_i, t_2) &gt;I_q(P_j, t_2)$, for time-steps such that $t_1&lt;t_2$. We may use an analogy to understand this situation: the classical PageRank gives us a snapshot or photo with a fixed hierarchy of web pages according to their calculated importance. On the contrary, the quantum PageRank is more like a movie since the quantum importance of the pages vary with time. In order to produce a fixed output made of a list with the quantum pages sorted according to their importance, a natural choice we make is to compute the temporal average of the quantum PageRanks and their standard mean deviation.</p>
 <p>There are additional features that a certain quantum PageRank may have as a consequence of the definition of the class above. We provide hereby several useful definitions:</p>
 <p><strong>Strong Hierarchical Preserving PageRank:</strong> when the classical hierarchical structure of a PageRank is preserved upon quantization.</p>
 <p>This notion is too strong when the PageRank varies with time as it is the case at the quantum level.</p>
 <p><strong>Weak Hierarchical Preserving PageRank:</strong> when the node with highest classical PageRank is preserved after quantization, but not so for the rest of pages.</p>
 <p><strong>Outperforming:</strong> when the highest classical PageRank of a page is overcome by the quantum PageRank of that page.</p>
 <p>Outperforming may occur at one given instant or on average thereby leading to the natural extended concepts of instantaneously outperforming or average outperforming, respectively.</p>
-<p>In section <em>Discussion</em> we provide a list of main results that we have obtained with our quantized version of the quantum PageRank algorithm. Remarkably, quantum fluctuations may change the classical hierarchy of web pages both instantaneously and in terms of mean values.</p>
-<p>This paper is organized as follows: in Sect. <em>Results</em> we give an introduction to the classical notion of PageRank needed to present in subsect. <em>Results: Quantum PageRanks _the quantum version of it. In subsect. _Results: A Quantization of Google PageRank</em> we present our proposal for a quantum version of Google PageRank algorithm. In subsect. <em>Results: Simulations for Quantum PageRanks</em> we perform numerical simulations of the quantum algorithm to representative directed graphs representing either an intranet or a general web with no special symmetry. Sect. <em>Discussion</em> is devoted to conclusions.</p>
+<p>In section _Discussion_ we provide a list of main results that we have obtained with our quantized version of the quantum PageRank algorithm. Remarkably, quantum fluctuations may change the classical hierarchy of web pages both instantaneously and in terms of mean values.</p>
+<p>This paper is organized as follows: in Sect. _Results_ we give an introduction to the classical notion of PageRank needed to present in subsect. _Results: Quantum PageRanks _the quantum version of it. In subsect. _Results: A Quantization of Google PageRank_ we present our proposal for a quantum version of Google PageRank algorithm. In subsect. _Results: Simulations for Quantum PageRanks_ we perform numerical simulations of the quantum algorithm to representative directed graphs representing either an intranet or a general web with no special symmetry. Sect. _Discussion_ is devoted to conclusions.</p>
 <h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><p><strong>A. Classical PageRank.</strong> Brin and Page introduced Google in 1998, a time when the pace at which the web was growing began to outstrip the ability of current search engines to yield useable results. A major distinction between their algorithm, called PageRank (PR), and previous approaches is the fact that PR has an objective character, while other searchers were based up on the subjective criterium of the contents of the pages, because they were built as a collection of links that people in companies stored on a regular basis. In order words, PR is dynamical while the other approaches were static and subjective w.r.t. contents of the pages.</p>
 <p>The way most search engines, including Google, work is to continually retrieve pages from the web, index the words in each document, and store this information. Each time a user asks for a web search using a search phrase, such as “search engine”, the search engine determines outputs all pages on the web that contain the words in the searched phrase or are semantically related to it.</p>
 <p>Then, a problem arises naturally: Google now claims to index 50 billion pages. Roughly 95% of the text in web pages is composed from a mere 10,000 words. This means that, for most searches, there will be a huge number of pages containing the words in the search phrase. What is needed is a mean of ranking the importance of the pages that fit the search criteria so that the pages can be sorted with the most important pages at the top of the list. Their success is largely due to PageRank’s ability to rank the importance of pages in the WWW.</p>
 <p>_Google PageRank. _The key idea of Google’s PageRank algorithm is that the importance of a page is given by how many pages link to it. If we define $I(P_i)$ as the importance of a page Pi and Bi as the set of pages linking to it, then we might think to put in equations the key idea put forward above as follows:</p>
-<p>$$ I\left(P_{i}\right):=\sum_{j \in B_{i}} \frac{I\left(P_{j}\right)}{\operatorname{outdeg}\left(\mathrm{P}_{j}\right)} $$</p>
-<p>where outdeg(Pj) is the outdegree (i.e. the number of outgoing links) of the page Pj. Let us define a matrix, called the hyperlink matrix, in which the entry in the ith row and jth column is:</p>
-<p>$$<br>H_{i j}:=\left{\begin{array}{ll}<br>{1 / \text { outdeg }\left(\mathrm{P}<em>{\mathrm{j}}\right)} &amp; {\text { if } P</em>{j} \in B_{i}} \<br>{0} &amp; {\text { otherwise }}<br>\end{array}\right.<br>$$</p>
-<p>We will also form a vector I whose components are the PageRanks I(Pi). The condition above defining the PageRank can be expressed in matrix form as:</p>
-<p>$$I=HI$$</p>
-<p>Thus, we have recast the problem of finding the PageRanks as the problem of finding the eigenvalues of a matrix. We are in for a special challenge since the matrix H is a square matrix with one column for each web page indexed by Google. This means that H has about n=50 billion columns and rows. However H is a sparse matrix, i.e. most of the entries in H are zero; in fact, studies show that web pages have an average of about 10 links, meaning that, on average,all but 10 entries in every column are zero.</p>
+<script type="math/tex; mode=display">I\left(P_{i}\right):=\sum_{j \in B_{i}} \frac{I\left(P_{j}\right)}{\operatorname{outdeg}\left(\mathrm{P}_{j}\right)}</script><p>where outdeg(Pj) is the outdegree (i.e. the number of outgoing links) of the page Pj. Let us define a matrix, called the hyperlink matrix, in which the entry in the ith row and jth column is:</p>
+<script type="math/tex; mode=display">
+H_{i j}:=\left\{\begin{array}{ll}
+{1 / \text { outdeg }\left(\mathrm{P}_{\mathrm{j}}\right)} & {\text { if } P_{j} \in B_{i}} \\
+{0} & {\text { otherwise }}
+\end{array}\right.</script><p>We will also form a vector I whose components are the PageRanks I(Pi). The condition above defining the PageRank can be expressed in matrix form as:</p>
+<script type="math/tex; mode=display">I=HI</script><p>Thus, we have recast the problem of finding the PageRanks as the problem of finding the eigenvalues of a matrix. We are in for a special challenge since the matrix H is a square matrix with one column for each web page indexed by Google. This means that H has about n=50 billion columns and rows. However H is a sparse matrix, i.e. most of the entries in H are zero; in fact, studies show that web pages have an average of about 10 links, meaning that, on average,all but 10 entries in every column are zero.</p>
 <p>We will choose a method known as the power method for finding the stationary vector I of the matrix H. How does the power method work? We begin by choosing a vector I0 as a candidate for I and then producing a sequence of vectors Ik by:</p>
-<p>$$I^{k+1}=H I^{k}$$</p>
-<p>However, as it is formulated the PageRank algorithm will not output a meaningful vector. We will need to patch the procedure in various ways.</p>
-<p><em>Patching the Algorithm.</em> It can be seen that if there are dangling nodes (as e.g. in Fig. 1), pages that are not linked to by any one, then the power method will output the null vector. If we consider the following example shown in Figure 1, whose hyperlink matrix is:</p>
-<p>$$<br>H=\left(\begin{array}{ll}<br>{0} &amp; {0} \<br>{1} &amp; {0}<br>\end{array}\right)<br>$$</p>
-<p>and start from $I_0=(1, 0)^t$ one ends up with $I=(0, 0)^t$.</p>
+<script type="math/tex; mode=display">I^{k+1}=H I^{k}</script><p>However, as it is formulated the PageRank algorithm will not output a meaningful vector. We will need to patch the procedure in various ways.</p>
+<p>_Patching the Algorithm._ It can be seen that if there are dangling nodes (as e.g. in Fig. 1), pages that are not linked to by any one, then the power method will output the null vector. If we consider the following example shown in Figure 1, whose hyperlink matrix is:</p>
+<script type="math/tex; mode=display">
+H=\left(\begin{array}{ll}
+{0} & {0} \\
+{1} & {0}
+\end{array}\right)</script><p>and start from $I_0=(1, 0)^t$ one ends up with $I=(0, 0)^t$.</p>
 <p>The first patch in the tinkering of the PageRank algorithm will be replacing the column corresponding to a dangling node with a column of all 1/n with n the number of nodes. This means that virtually every dangling node is linking to every single node in the web, including itself. This prevents the power method from giving the null vector. This way, the disconnected graph becomes effectively connected at the price of giving a very low weight to the artificial bonds (added links).</p>
 <p>The graph, with the addition of the extra links would look like (see Fig. 2):</p>
 <p>with a modified hyperlink matrix, E:</p>
-<p>$$ E=\left(\begin{array}{ll} {0} &amp; {1/2} \ {1} &amp; {1/2} \end{array}\right) $$</p>
-<p>The matrix E that we obtain is, in general, (column) stochastic, i.e. its columns all sum up to one. From the theory of stochastic matrices one knows that 1 is always an eigenvalue. Furthermore, the convergence of $I^k=E I^{k-1}$ to I depends on the second eigenvalue of E, $\lambda_2$. If it is smaller than 1, then the power method will converge. In addition, it is more rapid if $|\lambda_2|$ is as close to 0 as possible.</p>
+<script type="math/tex; mode=display">E=\left(\begin{array}{ll} {0} & {1/2} \\ {1} & {1/2} \end{array}\right)</script><p>The matrix E that we obtain is, in general, (column) stochastic, i.e. its columns all sum up to one. From the theory of stochastic matrices one knows that 1 is always an eigenvalue. Furthermore, the convergence of $I^k=E I^{k-1}$ to I depends on the second eigenvalue of E, $\lambda_2$. If it is smaller than 1, then the power method will converge. In addition, it is more rapid if $|\lambda_2|$ is as close to 0 as possible.</p>
 <p>Let us consider the graph in fig. 3, with E matrix:</p>
-<p>$$<br>E=\left(\begin{array}{llll}<br>{0} &amp; {0} &amp; {0} &amp; {1} \<br>{1} &amp; {0} &amp; {0} &amp; {0} \<br>{0} &amp; {1} &amp; {0} &amp; {0} \<br>{0} &amp; {0} &amp; {1} &amp; {0}<br>\end{array}\right)<br>$$</p>
-<p>One can see that the second eigenvalue of E, $|\lambda_2|$ is equal to one in this case, and actually all the eigenvalues are on the circle of radius 1 in the complex plane. If we compute I with the power method starting from, say, $I_0=(1, 0, 0, 0)^t$ it will fail to converge.</p>
+<script type="math/tex; mode=display">
+E=\left(\begin{array}{llll}
+{0} & {0} & {0} & {1} \\
+{1} & {0} & {0} & {0} \\
+{0} & {1} & {0} & {0} \\
+{0} & {0} & {1} & {0}
+\end{array}\right)</script><p>One can see that the second eigenvalue of E, $|\lambda_2|$ is equal to one in this case, and actually all the eigenvalues are on the circle of radius 1 in the complex plane. If we compute I with the power method starting from, say, $I_0=(1, 0, 0, 0)^t$ it will fail to converge.</p>
 <p>We will need to patch the algorithm again to ensure that $|\lambda_2|&lt;1$.In order to guarantee it, we will require E to be primitive, i.e. that there is an integer m such that $E^m$ contains all positive entries. The meaning of this assumption is that the graph is such that any page is connected by a path of at least m links to any other.</p>
 <p>Anticipating the interpretation of a diffusion phenomenon associated to searching the web, we can interpret the requirement of E to be primitive as the requirement of finding the walker with nonzero probability on any site after a minimum time m. Let us now consider the graph in fig. 4. One can divide the graph in two subgraphs G1 and G2. There are no links pointing from the subgraph G2, made of the nodes 3 and 4 to the first subgraph G1, made of nodes 1 and 2. If we write down the matrix E:</p>
-<p>$$<br>E=\left(\begin{array}{llll}<br>{0}   &amp; {1/2} &amp; {0} &amp; {0} \<br>{1/3} &amp; {0}   &amp; {0} &amp; {0} \<br>{1/3} &amp; {1/2} &amp; {0} &amp; {1} \<br>{1/3} &amp; {0}   &amp; {1} &amp; {0}<br>\end{array}\right)<br>$$</p>
-<p>we can see that there is a block that is zero, precisely the one that carries the information of the edges linking the nodes of G2 to the nodes of G1.</p>
-<p>If we calculate I with the power method starting from $I_0=(1,0,0,0)^t$ we find: $I=(0,0,3/5,2/5)^t$. Yet, one is not satisfied from giving an interpretation to the vector I because the nodes from the first subgraph G1 have zero importance albeit being linked by other nodes.This is caused by the reducibility of E that causes a drain of importance from G1 to G2. In order to have a meaningful vector I, one that has all nonzero entries, one should demand that the matrix be irreducible.A necessary and sufficient condition for it is that the graph is <em>strongly connected</em>, i.e. that given two pages there is always a path connecting one to the other (see 29) chap. 8.</p>
-<p><em>The Patched Algorithm</em>. In order to implement all these patches, let us imagine a walk on the graph. With probability $\alpha$ the walker, which is equivalent to the surfer mentioned earlier, will follow the web with stochastic matrix E and with probability $1-\alpha$, it will jump to any page at random. The matrix of this process would be:</p>
-<p>$$<br>G:=\alpha E+\frac{(1-\alpha)}{N} 1<br>$$</p>
-<p>where 1 is a matrix with entries all set to 1 and N is the number of nodes. This matrix is known as the Google Matrix. Now, the matrixG is irreducible because the matrix 1 is irreducible. Furthermore, it is also primitive since it has all positive entries.Wehave thus obtained a matrix that is both <em>primitive</em> and <em>irreducible</em>. This means it has a unique stationary vector that may be calculated with the power method. Furthermore, the result does not depend on the initial value I0 because the underlying graph is strongly connected, which is equivalent to the irreducibility of G, see29.</p>
+<script type="math/tex; mode=display">
+E=\left(\begin{array}{llll}
+{0}   & {1/2} & {0} & {0} \\
+{1/3} & {0}   & {0} & {0} \\
+{1/3} & {1/2} & {0} & {1} \\
+{1/3} & {0}   & {1} & {0}
+\end{array}\right)</script><p>we can see that there is a block that is zero, precisely the one that carries the information of the edges linking the nodes of G2 to the nodes of G1.</p>
+<p>If we calculate I with the power method starting from $I_0=(1,0,0,0)^t$ we find: $I=(0,0,3/5,2/5)^t$. Yet, one is not satisfied from giving an interpretation to the vector I because the nodes from the first subgraph G1 have zero importance albeit being linked by other nodes.This is caused by the reducibility of E that causes a drain of importance from G1 to G2. In order to have a meaningful vector I, one that has all nonzero entries, one should demand that the matrix be irreducible.A necessary and sufficient condition for it is that the graph is _strongly connected_, i.e. that given two pages there is always a path connecting one to the other (see 29) chap. 8.</p>
+<p>_The Patched Algorithm_. In order to implement all these patches, let us imagine a walk on the graph. With probability $\alpha$ the walker, which is equivalent to the surfer mentioned earlier, will follow the web with stochastic matrix E and with probability $1-\alpha$, it will jump to any page at random. The matrix of this process would be:</p>
+<script type="math/tex; mode=display">
+G:=\alpha E+\frac{(1-\alpha)}{N} 1</script><p>where 1 is a matrix with entries all set to 1 and N is the number of nodes. This matrix is known as the Google Matrix. Now, the matrixG is irreducible because the matrix 1 is irreducible. Furthermore, it is also primitive since it has all positive entries.Wehave thus obtained a matrix that is both _primitive_ and _irreducible_. This means it has a unique stationary vector that may be calculated with the power method. Furthermore, the result does not depend on the initial value I0 because the underlying graph is strongly connected, which is equivalent to the irreducibility of G, see29.</p>
 <p>The parameter a is free and needs to be tuned. It is known30 that the second eigenvalue of G, $\lambda_2$, is such that $\lambda_2&lt;\alpha$, so one would choose a as close to zero as possible but in this way the structure of the web, described by E would not be taken into account at all. Brin and page chose $\alpha=0.85$ to optimize the calculation.</p>
-<p><em>Formulation as a Random Walk</em>. It is very appealing and useful to rethink the problem of assigning the importance of a page as the task of calculating the fraction of time a walker diffusing on the graph according to the stochastic process given by the Google matrix G. In fact we, can reformulate the Google PageRank as the algorithm that computes the fraction of the time the walker spends on each node by defining the fraction on the jth page Tj as:</p>
-<p>$$<br>T_{i}=\sum_{j} G_{i j} T_{j}<br>$$</p>
-<p>Equivalently, one can say that the operational meaning of the PageRank algorithm is to give the probability to find the walker on the node Pi. Let us make it clearer by defining a set of random variables: $X^{(0)}, X^{(1)}, …, X^{(n)},…$, one for every time step. For each step, the random variable can take on values in the set of nodes {Pi} of the web. We can recast Google PageRank in the language of a Markov Chain. Thus, from eq. (6) written as:</p>
-<p>$$<br>\operatorname{Pr}\left(X^{(n+1)}=P_{i}\right)=\sum_{j} G_{i j} \operatorname{Pr}\left(X^{(n)}=P_{j}\right)<br>$$</p>
-<p>and from the law of total probability:</p>
-<p>$$<br>\operatorname{Pr}\left(X^{(n+1)}=P_{i}\right)=\sum_{j} \operatorname{Pr}\left(X^{(n+1)}=P_{i} | X^{(n)}=P_{j}\right) \operatorname{Pr}\left(X^{(n)}=P_{j}\right)<br>$$</p>
-<p>one can interpret the stochastic matrix G as the conditional probability linking one time step to the other, i.e.:</p>
+<p>_Formulation as a Random Walk_. It is very appealing and useful to rethink the problem of assigning the importance of a page as the task of calculating the fraction of time a walker diffusing on the graph according to the stochastic process given by the Google matrix G. In fact we, can reformulate the Google PageRank as the algorithm that computes the fraction of the time the walker spends on each node by defining the fraction on the jth page Tj as:</p>
+<script type="math/tex; mode=display">
+T_{i}=\sum_{j} G_{i j} T_{j}</script><p>Equivalently, one can say that the operational meaning of the PageRank algorithm is to give the probability to find the walker on the node Pi. Let us make it clearer by defining a set of random variables: $X^{(0)}, X^{(1)}, …, X^{(n)},…$, one for every time step. For each step, the random variable can take on values in the set of nodes {Pi} of the web. We can recast Google PageRank in the language of a Markov Chain. Thus, from eq. (6) written as:</p>
+<script type="math/tex; mode=display">
+\operatorname{Pr}\left(X^{(n+1)}=P_{i}\right)=\sum_{j} G_{i j} \operatorname{Pr}\left(X^{(n)}=P_{j}\right)</script><p>and from the law of total probability:</p>
+<script type="math/tex; mode=display">
+\operatorname{Pr}\left(X^{(n+1)}=P_{i}\right)=\sum_{j} \operatorname{Pr}\left(X^{(n+1)}=P_{i} | X^{(n)}=P_{j}\right) \operatorname{Pr}\left(X^{(n)}=P_{j}\right)</script><p>one can interpret the stochastic matrix G as the conditional probability linking one time step to the other, i.e.:</p>
 <p>$G_{ij}=\operatorname{Pr}\left(X^{(n+1)}=P_{i} | X^{(n)}=P_{j}\right) $</p>
 <p>We will make use in the following of the latter interpretation of Google PageRank to devise methods to quantize it.</p>
 
@@ -666,7 +678,24 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 
