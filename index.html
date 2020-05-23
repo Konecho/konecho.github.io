@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://konecho.xyz/2020/05/23/markdown%20test/">
+    <link itemprop="mainEntityOfPage" href="https://konecho.xyz/2020/05/23/md-latex-test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Konecho">
@@ -251,7 +251,260 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/05/23/markdown%20test/" itemprop="url">markdown test</a></h1>
+                <a class="post-title-link" href="/2020/05/23/md-latex-test/" itemprop="url">md-latex-test</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-23T12:48:42+08:00">
+                2020-05-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <hr>
+<p>title: md-latex-test<br>date: 2020-05-23 12:50:20<br>tags:</p>
+<h2 id="mathjax-true"><a href="#mathjax-true" class="headerlink" title="mathjax: true"></a>mathjax: true</h2><p>$x$ math at the start of the document</p>
+<p>Nested: $M = \text{while e^2 $e^2$ do $c^2$ end}$</p>
+<p>This document is to test $\LaTeX$ rendering with <a href="https://atom.io/packages/markdown-preview-plus" target="_blank" rel="noopener">markdown-preview-plus</a>.</p>
+<p><strong>Numbered equations</strong></p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\int_0^x \sin(x) dx
+\label{eq:test}
+\end{equation}</script><p>$\eqref{eq:test}$</p>
+<p><strong>Blockquotes</strong></p>
+<blockquote>
+<ol>
+<li>A block quote</li>
+<li>With a list inside</li>
+<li>With $math$</li>
+</ol>
+</blockquote>
+<p><strong>Math environment Syntax testing</strong></p>
+<p>Inline Math should work with <code>$</code>  $\frac{x+y}{y}$<br>and <code>\(</code> (\frac{x+y}{y})</p>
+<p>Use <code>\[</code> on separate lines:</p>
+<p>[<br>\int_{-\infty}^\infty e^{-x^2} = \sqrt{\pi}<br>]</p>
+<p>Use <code>\[</code> on the same line:</p>
+<p>[ \frac{-b \pm \sqrt{b^2-4ac}}{2a} ]</p>
+<p>Use $$$$ on separate lines:</p>
+<script type="math/tex; mode=display">
+a+b</script><p>Use $$$$ on the same line:</p>
+<script type="math/tex; mode=display">E=mc^2</script><hr>
+<p><strong>Some Tex Functions</strong></p>
+<p>$k \times k$, $n \times 2$, $2 \times n$, $\times$</p>
+<p>$x \cdot y$, $\cdot$</p>
+<p>$\sqrt{x^2+y^2+z^2}$</p>
+<p>$\alpha \beta \gamma$</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+x\ &= y\\
+mc^2\ &= E
+\end{aligned}</script><hr>
+<p><strong>Escaped Math environments</strong></p>
+<p>In the following examples no math environments should render:</p>
+<p>a $5, a $10 and a $100 Bill.</p>
+<p>All McScrooge sees</p>
+<script type="math/tex; mode=display">
+
+and even more:</script><p>\[x+y]<br>\(x+y)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$x</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\$</span><br></pre></td></tr></table></figure>
+<p><code>\$</code>, <code>\[ \]</code>, <script type="math/tex">x</script></p>
+<hr>
+<p><strong>Testing <code>\newcommand</code></strong></p>
+<p>For all $x$ and $y$ in $\mathbb{R}^k$ it is true that</p>
+<script type="math/tex; mode=display">
+\newcommand{sca}[1]{\langle #1 \rangle}
+|\sca{x,y}|^2 \le \sca{x,x} \cdot \sca{y,y},</script><!-- newcommand not in environment-->
+<p>\newcommand{\scalong}[1]{(#1_1,\dots,#1_k)}</p>
+<p>where $\sca{\cdot,\cdot}$ denotes the inner product $\sca{\scalong{x}, \scalong{x}} = \sum_{i=1}^k x_i y_i$.</p>
+<hr>
+<p><strong>Testing several math fonts</strong><br>[<br>p(\mathbf{m}) \sim \mathcal{N}(\mathbf{m}) e^{-\sum_{i} \beta_i m_i}<br>]</p>
+<p>[<br>\langle \vec{m} \rangle =<br>\frac{1}{Z(\vec{\beta})}\vec{m}(\mu)<br>\sum_{\mu\in\mathcal{G}}<br>e^{-\vec{\beta}\cdot\vec{m}(\mu)}<br>]</p>
+<hr>
+<p>Notice below that the <code>\[</code>-separated display math doesn’t have a blank line before and after (i.e. in an actual $\LaTeX$ document it wouldn’t be placed in a separate paragraph):</p>
+<p>The _characteristic polynomial_ $\chi(\lambda)$ of the<br>$3 \times 3$ matrix<br>[ \left( \begin{array}{ccc}<br>a &amp; b &amp; c \\<br>d &amp; e &amp; f \\<br>g &amp; h &amp; i \end{array} \right)]<br>is given by the formula<br>[ \chi(\lambda) = \left| \begin{array}{ccc}<br>\lambda - a &amp; -b &amp; -c \\<br>-d &amp; \lambda - e &amp; -f \\<br>-g &amp; -h &amp; \lambda - i \end{array} \right|.]</p>
+<p>This is a long line: $\chi(\lambda) = a e i-a e \lambda -a f h-a i \lambda +a \lambda ^2-b d i+b d \lambda +b f g+c d h-c e g+c g \lambda -e i \lambda +e \lambda ^2+f h \lambda +i \lambda ^2-\lambda ^3$</p>
+<hr>
+<p><strong>Does it work in different MD elements?</strong></p>
+<h1 id="Math-x-2-in-heading-1"><a href="#Math-x-2-in-heading-1" class="headerlink" title="Math $x^2$ in heading 1"></a>Math $x^2$ in heading 1</h1><h2 id="Math-x-2-in-heading-2"><a href="#Math-x-2-in-heading-2" class="headerlink" title="Math $x^2$ in heading 2"></a>Math $x^2$ in heading 2</h2><h3 id="Math-x-2-in-heading-3"><a href="#Math-x-2-in-heading-3" class="headerlink" title="Math $x^2$ in heading 3"></a>Math $x^2$ in heading 3</h3><h4 id="Math-x-2-in-heading-4"><a href="#Math-x-2-in-heading-4" class="headerlink" title="Math $x^2$ in heading 4"></a>Math $x^2$ in heading 4</h4><p>$x_1, x_2, \dots, x_N$ should not conflict with <code>_</code> _italics_?</p>
+<p>$(f<em>g</em>h)(x)$ should not conflict with <code>*</code> <em>syn**</em>tax**?</p>
+<p>$<a href="c+d">a+b</a>$ should not conflict link <a href="#">syntax</a>?</p>
+<p>_math $x^2$ in emphasis_</p>
+<p><strong>math $x^2$ in bold</strong></p>
+<p><a href="http://www.mathjax.org/" target="_blank" rel="noopener">math $x^2$ in link</a></p>
+<p><code>math $x^2$ in code</code></p>
+<p><del>math $x^2$ in strikethrough</del></p>
+<p><strong>In Tables</strong></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Left-Aligned</th>
+<th style="text-align:center">Center Aligned</th>
+<th style="text-align:right">Right Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$a+b$</td>
+<td style="text-align:center">some wordy text</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td style="text-align:left">$a+b$</td>
+<td style="text-align:center">some wordy text</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td style="text-align:left">$a+b$</td>
+<td style="text-align:center">some wordy text</td>
+<td style="text-align:right">$1600</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>(only works with Pandoc)</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Left-Aligned</th>
+<th style="text-align:center">Center Aligned</th>
+<th style="text-align:right">Right Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$a+b$</td>
+<td style="text-align:center">some wordy text</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:center">$$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A=\mathbf{A}=\underline{A}=\begin{pmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br>a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br>\vdots &amp; \vdots &amp;        &amp; \vdots\\<br>a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}\\<br>\end{pmatrix} = (a_{ij})</p>
+<script type="math/tex; mode=display">|   $12 |
+|               |                 |    $1 |
+
+<!--</script><!-- hack to save markdown-it from runaway block math
+-->
+<p><strong>In Image Captions</strong></p>
+<p><img src="https://raw.githubusercontent.com/atom-community/markdown-preview-plus/master/imgs/mpp-full-res-invert.png" alt="$$a^2+b^2=c^2$$"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://konecho.xyz/2020/05/23/md-test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Konecho">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Konecho's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/23/md-test/" itemprop="url">md-test</a></h1>
         
 
         <div class="post-meta">
@@ -524,7 +777,7 @@ Third paragraph of definition 2.
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://konecho.xyz/2020/04/04/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://konecho.xyz/2020/01/01/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Konecho">
@@ -543,7 +796,7 @@ Third paragraph of definition 2.
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/04/04/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2020/01/01/hello-world/" itemprop="url">Hello World</a></h1>
         
 
         <div class="post-meta">
@@ -555,8 +808,8 @@ Third paragraph of definition 2.
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-04T17:42:51+08:00">
-                2020-04-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-01T00:00:00+08:00">
+                2020-01-01
               </time>
             
 
@@ -685,7 +938,7 @@ Third paragraph of definition 2.
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -856,24 +1109,7 @@ Third paragraph of definition 2.
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config("");
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
@@ -926,6 +1162,45 @@ Third paragraph of definition 2.
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+  
+
 
   
 
