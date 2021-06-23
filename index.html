@@ -1,1195 +1,562 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<html lang="en-us">
+    <head>
+	<meta name="generator" content="Hugo 0.84.0" /><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'><title>Konecho&#39;s Blog</title>
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel='canonical' href='https://example.com/'>
 
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Konecho&#39;s Blog'>
+<meta property='og:description' content='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'>
+<meta property='og:url' content='https://example.com/'>
+<meta property='og:site_name' content='Konecho&#39;s Blog'>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2020-10-09T00:00:00&#43;00:00 '/>
+<meta name="twitter:title" content="Konecho&#39;s Blog">
+<meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit."><link rel="alternate" type="application/rss&#43;xml" href="https://example.com/index.xml">
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"konecho.xyz","root":"/","scheme":"Pisces","version":"8.0.0-rc.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="这里什么都没有">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Konecho&#39;s Blog">
-<meta property="og:url" content="https://konecho.xyz/index.html">
-<meta property="og:site_name" content="Konecho&#39;s Blog">
-<meta property="og:description" content="这里什么都没有">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="Konecho">
-<meta property="article:tag" content="personal">
-<meta property="article:tag" content=" secrcet">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="https://konecho.xyz/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
 </script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
 
-  <title>Konecho's Blog</title>
-  
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
 
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-        <span class="toggle-line toggle-line-first"></span>
-        <span class="toggle-line toggle-line-middle"></span>
-        <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Konecho's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">There is nothing.</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-schedule">
-
-    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://example.com">Konecho&#39;s Blog</a></h1>
+        <h2 class="site-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
     </header>
 
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li  class='current' >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>暗色模式</span>
+            </li>
+        
+    </ol>
+</aside>
+<main class="main full-width">
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+    
+    
+    
 
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
+    <section class="article-list">
+        
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://konecho.xyz/2020/10/18/%E5%A6%82%E4%BD%95%E9%83%A8%E7%BD%B2/">
+<article class="has-image">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/test-chinese/">
+                <img src="/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_800x0_resize_q75_box.jpg"
+                        srcset="/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_800x0_resize_q75_box.jpg 800w, /p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="600" 
+                        loading="lazy"
+                        alt="Featured image of post Chinese Test" />
+                
+            </a>
+        </div>
+    
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Konecho">
-      <meta itemprop="description" content="这里什么都没有">
-    </span>
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/test/" style="background-color: #2a9d8f; color: #fff;">
+                Test
+            </a>
+        
+            <a href="/categories/%E6%B5%8B%E8%AF%95/" >
+                测试
+            </a>
+        
+    </header>
+    
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konecho's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/18/%E5%A6%82%E4%BD%95%E9%83%A8%E7%BD%B2/" class="post-title-link" itemprop="url">新电脑恢复hexo</a>
-        </h2>
+    <h2 class="article-title">
+        <a href="/p/test-chinese/">Chinese Test</a>
+    </h2>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
+    
+    <h3 class="article-subtitle">
+        这是一个副标题
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
 
-              <time title="创建时间：2020-10-18 00:00:00 / 修改时间：17:42:34" itemprop="dateCreated datePublished" datetime="2020-10-18T00:00:00+08:00">2020-10-18</time>
-            </span>
 
-          
+
+        <time class="article-time--published">Sep 09, 2020</time>
+    </footer></div>
+</header>
+</article>
+        
+            
+<article class="has-image">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/markdown-syntax-guide/">
+                <img src="/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hud7e36f7e20e71be184458283bdae4646_55974_800x0_resize_q75_box.jpg"
+                        srcset="/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hud7e36f7e20e71be184458283bdae4646_55974_800x0_resize_q75_box.jpg 800w, /p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash_hud7e36f7e20e71be184458283bdae4646_55974_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="534" 
+                        loading="lazy"
+                        alt="Featured image of post Markdown Syntax Guide" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/themes/" >
+                themes
+            </a>
+        
+            <a href="/categories/syntax/" >
+                syntax
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/markdown-syntax-guide/">Markdown Syntax Guide</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Sample article showcasing basic Markdown syntax and formatting for HTML elements.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Mar 11, 2019</time>
+    </footer></div>
+</header>
+</article>
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <h2 class="article-title">
+        <a href="/p/rich-content/">Rich Content</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        A brief description of Hugo Shortcodes
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Mar 10, 2019</time>
+    </footer></div>
+</header>
+</article>
+        
+            
+<article class="has-image">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/placeholder-text/">
+                <img src="/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash_hu958d513eeefe5556a31d065479ecc5ac_14205_800x0_resize_q75_box.jpg"
+                        srcset="/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash_hu958d513eeefe5556a31d065479ecc5ac_14205_800x0_resize_q75_box.jpg 800w, /p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash_hu958d513eeefe5556a31d065479ecc5ac_14205_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="533" 
+                        loading="lazy"
+                        alt="Featured image of post Placeholder Text" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/test/" style="background-color: #2a9d8f; color: #fff;">
+                Test
+            </a>
+        
+            <a href="/categories/test-with-whitespaces/" >
+                Test with whitespaces
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/placeholder-text/">Placeholder Text</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Lorem Ipsum Dolor Si Amet
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Mar 09, 2019</time>
+    </footer></div>
+</header>
+</article>
+        
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <h2 class="article-title">
+        <a href="/p/math-typesetting/">Math Typesetting</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        A brief guide to setup KaTeX
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Mar 08, 2019</time>
+    </footer></div>
+</header>
+</article>
+        
+    </section>
+    <nav class='pagination'>
+        
+        
+
+        
+            
+                <span class='page-link current'>1</span>
+                
+            
+            
+                    <a class='page-link' href='/page/2/'>2</a>
+                
+            
+    </nav>
+
+<footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Konecho&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.4.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+            </main>
+    
+    
+    <aside class="sidebar right-sidebar sticky">
+        
+            <form action="/search/" class="search-form widget" >
+        <p>
+            <label>搜索</label>
+            <input name="keyword" required placeholder="输入关键词..." />
+        
+            <button title="搜索">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+            </button>
+        </p>
+    </form>
+        
+            <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
 
         </div>
-      </header>
+        <h2 class="widget-title section-title">归档</h2>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+        
+        
+        
+        
+        
+        <div class="widget-archive--list">
+            <div class="archives-year">
+                    <a href="/archives/#2020">
+                        
+                            <span class="year">2020</span>
+                            <span class="count">1</span>
+                        
+                    </a> 
+                </div>
+            <div class="archives-year">
+                    <a href="/archives/#2019">
+                        
+                            <span class="year">2019</span>
+                            <span class="count">5</span>
+                        
+                    </a> 
+                </div>
+            
+        </div>
+    </section>
+        
+            <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
 
-      
-          <h3 id="安装scoop"><a href="#安装scoop" class="headerlink" title="安装scoop"></a>安装scoop</h3><p>iwr -useb get.scoop.sh | iex</p>
-<h3 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node-js"></a>安装node-js</h3><p>scoop install nodejs-lts</p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>npm install -g hexo-cli</p>
-<h3 id="cd到工作目录"><a href="#cd到工作目录" class="headerlink" title="cd到工作目录"></a>cd到工作目录</h3><p>cd PATH/OF/_config.yml/</p>
-<h3 id="更新post"><a href="#更新post" class="headerlink" title="更新post"></a>更新post</h3><p>hexo g</p>
-<p>hexo d</p>
 
-      
+
     </div>
+    <h2 class="widget-title section-title">标签云</h2>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+    <div class="tagCloud-tags">
+        
+            <a href="/tags/markdown/" class="font_size_2">
+                markdown
+            </a>
+        
+            <a href="/tags/css/" class="font_size_1">
+                css
+            </a>
+        
+            <a href="/tags/emoji/" class="font_size_1">
+                emoji
+            </a>
+        
+            <a href="/tags/html/" class="font_size_1">
+                html
+            </a>
+        
+            <a href="/tags/privacy/" class="font_size_1">
+                privacy
+            </a>
+        
+            <a href="/tags/shortcodes/" class="font_size_1">
+                shortcodes
+            </a>
+        
+            <a href="/tags/tag-with-whitespaces/" class="font_size_1">
+                tag with whitespaces
+            </a>
+        
+            <a href="/tags/text/" class="font_size_1">
+                text
+            </a>
+        
+            <a href="/tags/themes/" class="font_size_1">
+                themes
+            </a>
+        
+    </div>
+</section>
+        
+    </aside>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://konecho.xyz/2020/05/23/markdown%20test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Konecho">
-      <meta itemprop="description" content="这里什么都没有">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konecho's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/23/markdown%20test/" class="post-title-link" itemprop="url">markdown test</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-23 13:49:41" itemprop="dateCreated datePublished" datetime="2020-05-23T13:49:41+08:00">2020-05-23</time>
-            </span>
-
-          
 
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <hr>
-<p><strong>Advertisement :)</strong></p>
-<ul>
-<li><strong><a href="https://nodeca.github.io/pica/demo/" target="_blank" rel="noopener">pica</a></strong> - high quality and fast image<br>resize in browser.</li>
-<li><strong><a href="https://github.com/nodeca/babelfish/" target="_blank" rel="noopener">babelfish</a></strong> - developer friendly<br>i18n with plurals support and easy syntax.</li>
-</ul>
-<p>You will like those projects!</p>
-<hr>
-<h1 id="h1-Heading-8"><a href="#h1-Heading-8" class="headerlink" title="h1 Heading 8-)"></a>h1 Heading 8-)</h1><h2 id="h2-Heading"><a href="#h2-Heading" class="headerlink" title="h2 Heading"></a>h2 Heading</h2><h3 id="h3-Heading"><a href="#h3-Heading" class="headerlink" title="h3 Heading"></a>h3 Heading</h3><h4 id="h4-Heading"><a href="#h4-Heading" class="headerlink" title="h4 Heading"></a>h4 Heading</h4><h5 id="h5-Heading"><a href="#h5-Heading" class="headerlink" title="h5 Heading"></a>h5 Heading</h5><h6 id="h6-Heading"><a href="#h6-Heading" class="headerlink" title="h6 Heading"></a>h6 Heading</h6><h2 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h2><hr>
-<hr>
-<hr>
-<h2 id="Typographic-replacements"><a href="#Typographic-replacements" class="headerlink" title="Typographic replacements"></a>Typographic replacements</h2><p>Enable typographer option to see result.</p>
-<p>(c) (C) (r) (R) (tm) (TM) (p) (P) +-</p>
-<p>test.. test… test….. test?….. test!….</p>
-<p>!!!!!! ???? ,,  — —-</p>
-<p>“Smartypants, double quotes” and ‘single quotes’</p>
-<h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><p><strong>This is bold text</strong></p>
-<p><strong>This is bold text</strong></p>
-<p><em>This is italic text</em></p>
-<p>_This is italic text_</p>
-<p><del>Strikethrough</del></p>
-<h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><blockquote>
-<p>Blockquotes can also be nested…</p>
-<blockquote>
-<p>…by using additional greater-than signs right next to each other…</p>
-<blockquote>
-<p>…or with spaces between arrows.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h2><p>Unordered</p>
-<ul>
-<li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
-<li>Sub-lists are made by indenting 2 spaces:<ul>
-<li>Marker character change forces new list start:<ul>
-<li>Ac tristique libero volutpat at</li>
-</ul>
-<ul>
-<li>Facilisis in pretium nisl aliquet</li>
-</ul>
-<ul>
-<li>Nulla volutpat aliquam velit</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Very easy!</li>
-</ul>
-<p>Ordered</p>
-<ol>
-<li>Lorem ipsum dolor sit amet</li>
-<li>Consectetur adipiscing elit</li>
-<li>Integer molestie lorem at massa</li>
-</ol>
-<ol>
-<li>You can use sequential numbers…</li>
-<li>…or keep all the numbers as <code>1.</code></li>
-</ol>
-<p>Start numbering with offset:</p>
-<ol>
-<li>foo</li>
-<li>bar</li>
-</ol>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><p>Inline <code>code</code></p>
-<p>Indented code</p>
-<pre><code>// Some comments
-line 1 of code
-line 2 of code
-line 3 of code
-</code></pre><p>Block code “fences”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Sample text here...</span><br></pre></td></tr></table></figure>
-<p>Syntax highlighting</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span> (<span class="params">bar</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> bar++;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(foo(<span class="number">5</span>));</span><br></pre></td></tr></table></figure>
-<h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>data</td>
-<td>path to data files to supply the data that will be passed into templates.</td>
-</tr>
-<tr>
-<td>engine</td>
-<td>engine to be used for processing templates. Handlebars is the default.</td>
-</tr>
-<tr>
-<td>ext</td>
-<td>extension to be used for dest files.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Right aligned columns</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:right">Option</th>
-<th style="text-align:right">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">data</td>
-<td style="text-align:right">path to data files to supply the data that will be passed into templates.</td>
-</tr>
-<tr>
-<td style="text-align:right">engine</td>
-<td style="text-align:right">engine to be used for processing templates. Handlebars is the default.</td>
-</tr>
-<tr>
-<td style="text-align:right">ext</td>
-<td style="text-align:right">extension to be used for dest files.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><p><a href="http://dev.nodeca.com" target="_blank" rel="noopener">link text</a></p>
-<p><a href="http://nodeca.github.io/pica/demo/" target="_blank" rel="noopener" title="title text!">link with title</a></p>
-<p>Autoconverted link <a href="https://github.com/nodeca/pica" target="_blank" rel="noopener">https://github.com/nodeca/pica</a> (enable linkify to see)</p>
-<h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><p><img src="https://octodex.github.com/images/minion.png" alt="Minion"><br><img src="https://octodex.github.com/images/stormtroopocat.jpg" alt="Stormtroopocat" title="The Stormtroopocat"></p>
-<p>Like links, Images also have a footnote style syntax</p>
-<p><img src="https://octodex.github.com/images/dojocat.jpg" alt="Alt text" title="The Dojocat"></p>
-<p>With a reference later in the document defining the URL location:</p>
-<h2 id="Plugins"><a href="#Plugins" class="headerlink" title="Plugins"></a>Plugins</h2><p>The killer feature of <code>markdown-it</code> is very effective support of<br><a href="https://www.npmjs.org/browse/keyword/markdown-it-plugin" target="_blank" rel="noopener">syntax plugins</a>.</p>
-<h3 id="Emojies"><a href="#Emojies" class="headerlink" title="Emojies"></a><a href="https://github.com/markdown-it/markdown-it-emoji" target="_blank" rel="noopener">Emojies</a></h3><blockquote>
-<p>Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:</p>
-<p>Shortcuts (emoticons): :-) :-( 8-) ;)</p>
-</blockquote>
-<p>see <a href="https://github.com/markdown-it/markdown-it-emoji#change-output" target="_blank" rel="noopener">how to change output</a> with twemoji.</p>
-<h3 id="Subscript-Superscript"><a href="#Subscript-Superscript" class="headerlink" title="Subscript / Superscript"></a><a href="https://github.com/markdown-it/markdown-it-sub" target="_blank" rel="noopener">Subscript</a> / <a href="https://github.com/markdown-it/markdown-it-sup" target="_blank" rel="noopener">Superscript</a></h3><ul>
-<li>19^th^</li>
-<li>H~2~O</li>
-</ul>
-<h3 id=""><a href="#" class="headerlink" title="\"></a><a href="https://github.com/markdown-it/markdown-it-ins" target="_blank" rel="noopener">\<ins></a></h3><p>++Inserted text++</p>
-<h3 id="-1"><a href="#-1" class="headerlink" title="\"></a><a href="https://github.com/markdown-it/markdown-it-mark" target="_blank" rel="noopener">\<mark></a></h3><p>==Marked text==</p>
-<h3 id="Footnotes"><a href="#Footnotes" class="headerlink" title="Footnotes"></a><a href="https://github.com/markdown-it/markdown-it-footnote" target="_blank" rel="noopener">Footnotes</a></h3><p>Footnote 1 link<sup><a href="#fn_first" id="reffn_first">first</a></sup>.</p>
-<p>Footnote 2 link<sup><a href="#fn_second" id="reffn_second">second</a></sup>.</p>
-<p>Inline footnote^[Text of inline footnote] definition.</p>
-<p>Duplicated footnote reference<sup><a href="#fn_second" id="reffn_second">second</a></sup>.</p>
-<blockquote id="fn_first">
-<sup>first</sup>. Footnote <strong>can have markup</strong><a href="#reffn_first" title="Jump back to footnote [first] in the text."> &#8617;</a>
-</blockquote>
-<pre><code>and multiple paragraphs.
-</code></pre><blockquote id="fn_second">
-<sup>second</sup>. Footnote text.<a href="#reffn_second" title="Jump back to footnote [second] in the text."> &#8617;</a>
-</blockquote>
-<h3 id="Definition-lists"><a href="#Definition-lists" class="headerlink" title="Definition lists"></a><a href="https://github.com/markdown-it/markdown-it-deflist" target="_blank" rel="noopener">Definition lists</a></h3><p>Term 1</p>
-<p>:   Definition 1<br>with lazy continuation.</p>
-<p>Term 2 with <em>inline markup</em></p>
-<p>:   Definition 2</p>
-<pre><code>    { some code, part of Definition 2 }
-
-Third paragraph of definition 2.
-</code></pre><p>_Compact style:_</p>
-<p>Term 1<br>  ~ Definition 1</p>
-<p>Term 2<br>  ~ Definition 2a<br>  ~ Definition 2b</p>
-<h3 id="Abbreviations"><a href="#Abbreviations" class="headerlink" title="Abbreviations"></a><a href="https://github.com/markdown-it/markdown-it-abbr" target="_blank" rel="noopener">Abbreviations</a></h3><p>This is HTML abbreviation example.</p>
-<p>It converts “HTML”, but keep intact partial entries like “xxxHTMLyyy” and so on.</p>
-<p>*[HTML]: Hyper Text Markup Language</p>
-<h3 id="Custom-containers"><a href="#Custom-containers" class="headerlink" title="Custom containers"></a><a href="https://github.com/markdown-it/markdown-it-container" target="_blank" rel="noopener">Custom containers</a></h3><p>::: warning<br><em>here be dragons</em><br>:::</p>
-<h2 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h2><p>In <a href="https://en.wikipedia.org/wiki/Physics" target="_blank" rel="noopener">physics</a>, <strong>mass–energy equivalence</strong> is the principle that anything having <a href="https://en.wikipedia.org/wiki/Mass" target="_blank" rel="noopener">mass</a> has an equivalent amount of <a href="https://en.wikipedia.org/wiki/Energy" target="_blank" rel="noopener">energy</a> and vice versa, with these fundamental quantities directly relating to one another by <a href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank" rel="noopener">Albert Einstein</a>‘s famous formula: $E=m c^2$.</p>
-<p>This is an array:</p>
-<script type="math/tex; mode=display">
-\begin{bmatrix}
-1 & 0 & 0\\ 
-0 & 1 & 0\\ 
-0 & 0 & 1
-\end{bmatrix}</script>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://konecho.xyz/2020/05/23/md-latex-test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Konecho">
-      <meta itemprop="description" content="这里什么都没有">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konecho's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/23/md-latex-test/" class="post-title-link" itemprop="url">md-latex-test</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-23 12:50:20 / 修改时间：13:30:05" itemprop="dateCreated datePublished" datetime="2020-05-23T12:50:20+08:00">2020-05-23</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%B5%8B%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">测试</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>$x$ math at the start of the document</p>
-<p>Nested: $M = \text{while e^2 $e^2$ do $c^2$ end}$</p>
-<p>This document is to test $\LaTeX$ rendering with <a href="https://atom.io/packages/markdown-preview-plus" target="_blank" rel="noopener">markdown-preview-plus</a>.</p>
-<p><strong>Numbered equations</strong></p>
-<script type="math/tex; mode=display">
-\begin{equation}
-\int_0^x \sin(x) dx
-\label{eq:test}
-\end{equation}</script><p>$\eqref{eq:test}$</p>
-<p><strong>Blockquotes</strong></p>
-<blockquote>
-<ol>
-<li>A block quote</li>
-<li>With a list inside</li>
-<li>With $math$</li>
-</ol>
-</blockquote>
-<p><strong>Math environment Syntax testing</strong></p>
-<p>Inline Math should work with <code>$</code>  $\frac{x+y}{y}$<br>and <code>\(</code> (\frac{x+y}{y})</p>
-<p>Use <code>\[</code> on separate lines:</p>
-<p>[<br>\int_{-\infty}^\infty e^{-x^2} = \sqrt{\pi}<br>]</p>
-<p>Use <code>\[</code> on the same line:</p>
-<p>[ \frac{-b \pm \sqrt{b^2-4ac}}{2a} ]</p>
-<p>Use $$$$ on separate lines:</p>
-<script type="math/tex; mode=display">
-a+b</script><p>Use $$$$ on the same line:</p>
-<script type="math/tex; mode=display">E=mc^2</script><hr>
-<p><strong>Some Tex Functions</strong></p>
-<p>$k \times k$, $n \times 2$, $2 \times n$, $\times$</p>
-<p>$x \cdot y$, $\cdot$</p>
-<p>$\sqrt{x^2+y^2+z^2}$</p>
-<p>$\alpha \beta \gamma$</p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-x\ &= y\\
-mc^2\ &= E
-\end{aligned}</script><hr>
-<p><strong>Escaped Math environments</strong></p>
-<p>In the following examples no math environments should render:</p>
-<p>a $5, a $10 and a $100 Bill.</p>
-<p>All McScrooge sees</p>
-<script type="math/tex; mode=display">
-
-and even more:</script><p>\[x+y]<br>\(x+y)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$x</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\$</span><br></pre></td></tr></table></figure>
-<p><code>\$</code>, <code>\[ \]</code>, <script type="math/tex">x</script></p>
-<hr>
-<p><strong>Testing <code>\newcommand</code></strong></p>
-<p>For all $x$ and $y$ in $\mathbb{R}^k$ it is true that</p>
-<script type="math/tex; mode=display">
-\newcommand{sca}[1]{\langle #1 \rangle}
-|\sca{x,y}|^2 \le \sca{x,x} \cdot \sca{y,y},</script><!-- newcommand not in environment-->
-<p>\newcommand{\scalong}[1]{(#1_1,\dots,#1_k)}</p>
-<p>where $\sca{\cdot,\cdot}$ denotes the inner product $\sca{\scalong{x}, \scalong{x}} = \sum_{i=1}^k x_i y_i$.</p>
-<hr>
-<p><strong>Testing several math fonts</strong><br>[<br>p(\mathbf{m}) \sim \mathcal{N}(\mathbf{m}) e^{-\sum_{i} \beta_i m_i}<br>]</p>
-<p>[<br>\langle \vec{m} \rangle =<br>\frac{1}{Z(\vec{\beta})}\vec{m}(\mu)<br>\sum_{\mu\in\mathcal{G}}<br>e^{-\vec{\beta}\cdot\vec{m}(\mu)}<br>]</p>
-<hr>
-<p>Notice below that the <code>\[</code>-separated display math doesn’t have a blank line before and after (i.e. in an actual $\LaTeX$ document it wouldn’t be placed in a separate paragraph):</p>
-<p>The _characteristic polynomial_ $\chi(\lambda)$ of the<br>$3 \times 3$ matrix<br>[ \left( \begin{array}{ccc}<br>a &amp; b &amp; c \\<br>d &amp; e &amp; f \\<br>g &amp; h &amp; i \end{array} \right)]<br>is given by the formula<br>[ \chi(\lambda) = \left| \begin{array}{ccc}<br>\lambda - a &amp; -b &amp; -c \\<br>-d &amp; \lambda - e &amp; -f \\<br>-g &amp; -h &amp; \lambda - i \end{array} \right|.]</p>
-<p>This is a long line: $\chi(\lambda) = a e i-a e \lambda -a f h-a i \lambda +a \lambda ^2-b d i+b d \lambda +b f g+c d h-c e g+c g \lambda -e i \lambda +e \lambda ^2+f h \lambda +i \lambda ^2-\lambda ^3$</p>
-<hr>
-<p><strong>Does it work in different MD elements?</strong></p>
-<h1 id="Math-x-2-in-heading-1"><a href="#Math-x-2-in-heading-1" class="headerlink" title="Math $x^2$ in heading 1"></a>Math $x^2$ in heading 1</h1><h2 id="Math-x-2-in-heading-2"><a href="#Math-x-2-in-heading-2" class="headerlink" title="Math $x^2$ in heading 2"></a>Math $x^2$ in heading 2</h2><h3 id="Math-x-2-in-heading-3"><a href="#Math-x-2-in-heading-3" class="headerlink" title="Math $x^2$ in heading 3"></a>Math $x^2$ in heading 3</h3><h4 id="Math-x-2-in-heading-4"><a href="#Math-x-2-in-heading-4" class="headerlink" title="Math $x^2$ in heading 4"></a>Math $x^2$ in heading 4</h4><p>$x_1, x_2, \dots, x_N$ should not conflict with <code>_</code> _italics_?</p>
-<p>$(f<em>g</em>h)(x)$ should not conflict with <code>*</code> <em>syn**</em>tax**?</p>
-<p>$<a href="c+d">a+b</a>$ should not conflict link <a href="#">syntax</a>?</p>
-<p>_math $x^2$ in emphasis_</p>
-<p><strong>math $x^2$ in bold</strong></p>
-<p><a href="http://www.mathjax.org/" target="_blank" rel="noopener">math $x^2$ in link</a></p>
-<p><code>math $x^2$ in code</code></p>
-<p><del>math $x^2$ in strikethrough</del></p>
-<p><strong>In Tables</strong></p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Left-Aligned</th>
-<th style="text-align:center">Center Aligned</th>
-<th style="text-align:right">Right Aligned</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">$a+b$</td>
-<td style="text-align:center">some wordy text</td>
-<td style="text-align:right">$1600</td>
-</tr>
-<tr>
-<td style="text-align:left">$a+b$</td>
-<td style="text-align:center">some wordy text</td>
-<td style="text-align:right">$1600</td>
-</tr>
-<tr>
-<td style="text-align:left">$a+b$</td>
-<td style="text-align:center">some wordy text</td>
-<td style="text-align:right">$1600</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>(only works with Pandoc)</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Left-Aligned</th>
-<th style="text-align:center">Center Aligned</th>
-<th style="text-align:right">Right Aligned</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">$a+b$</td>
-<td style="text-align:center">some wordy text</td>
-<td style="text-align:right">$1600</td>
-</tr>
-<tr>
-<td style="text-align:left"></td>
-<td style="text-align:center">$$</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>A=\mathbf{A}=\underline{A}=\begin{pmatrix}<br>a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\<br>a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\<br>\vdots &amp; \vdots &amp;        &amp; \vdots\\<br>a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}\\<br>\end{pmatrix} = (a_{ij})</p>
-<script type="math/tex; mode=display">|   $12 |
-|               |                 |    $1 |
-
-<!--</script><!-- hack to save markdown-it from runaway block math
--->
-<p><strong>In Image Captions</strong></p>
-<p><img src="https://raw.githubusercontent.com/atom-community/markdown-preview-plus/master/imgs/mpp-full-res-invert.png" alt="$$a^2+b^2=c^2$$"></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://konecho.xyz/2020/05/23/md-test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Konecho">
-      <meta itemprop="description" content="这里什么都没有">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konecho's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/23/md-test/" class="post-title-link" itemprop="url">md-test</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-23 12:25:55 / 修改时间：12:34:08" itemprop="dateCreated datePublished" datetime="2020-05-23T12:25:55+08:00">2020-05-23</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <hr>
-<p><strong>Advertisement :)</strong></p>
-<ul>
-<li><strong><a href="https://nodeca.github.io/pica/demo/" target="_blank" rel="noopener">pica</a></strong> - high quality and fast image<br>resize in browser.</li>
-<li><strong><a href="https://github.com/nodeca/babelfish/" target="_blank" rel="noopener">babelfish</a></strong> - developer friendly<br>i18n with plurals support and easy syntax.</li>
-</ul>
-<p>You will like those projects!</p>
-<hr>
-<h1 id="h1-Heading-8"><a href="#h1-Heading-8" class="headerlink" title="h1 Heading 8-)"></a>h1 Heading 8-)</h1><h2 id="h2-Heading"><a href="#h2-Heading" class="headerlink" title="h2 Heading"></a>h2 Heading</h2><h3 id="h3-Heading"><a href="#h3-Heading" class="headerlink" title="h3 Heading"></a>h3 Heading</h3><h4 id="h4-Heading"><a href="#h4-Heading" class="headerlink" title="h4 Heading"></a>h4 Heading</h4><h5 id="h5-Heading"><a href="#h5-Heading" class="headerlink" title="h5 Heading"></a>h5 Heading</h5><h6 id="h6-Heading"><a href="#h6-Heading" class="headerlink" title="h6 Heading"></a>h6 Heading</h6><h2 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h2><hr>
-<hr>
-<hr>
-<h2 id="Typographic-replacements"><a href="#Typographic-replacements" class="headerlink" title="Typographic replacements"></a>Typographic replacements</h2><p>Enable typographer option to see result.</p>
-<p>(c) (C) (r) (R) (tm) (TM) (p) (P) +-</p>
-<p>test.. test… test….. test?….. test!….</p>
-<p>!!!!!! ???? ,,  — —-</p>
-<p>“Smartypants, double quotes” and ‘single quotes’</p>
-<h2 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h2><p><strong>This is bold text</strong></p>
-<p><strong>This is bold text</strong></p>
-<p><em>This is italic text</em></p>
-<p>_This is italic text_</p>
-<p><del>Strikethrough</del></p>
-<h2 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h2><blockquote>
-<p>Blockquotes can also be nested…</p>
-<blockquote>
-<p>…by using additional greater-than signs right next to each other…</p>
-<blockquote>
-<p>…or with spaces between arrows.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h2><p>Unordered</p>
-<ul>
-<li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
-<li>Sub-lists are made by indenting 2 spaces:<ul>
-<li>Marker character change forces new list start:<ul>
-<li>Ac tristique libero volutpat at</li>
-</ul>
-<ul>
-<li>Facilisis in pretium nisl aliquet</li>
-</ul>
-<ul>
-<li>Nulla volutpat aliquam velit</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Very easy!</li>
-</ul>
-<p>Ordered</p>
-<ol>
-<li>Lorem ipsum dolor sit amet</li>
-<li>Consectetur adipiscing elit</li>
-<li>Integer molestie lorem at massa</li>
-</ol>
-<ol>
-<li>You can use sequential numbers…</li>
-<li>…or keep all the numbers as <code>1.</code></li>
-</ol>
-<p>Start numbering with offset:</p>
-<ol>
-<li>foo</li>
-<li>bar</li>
-</ol>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><p>Inline <code>code</code></p>
-<p>Indented code</p>
-<pre><code>// Some comments
-line 1 of code
-line 2 of code
-line 3 of code
-</code></pre><p>Block code “fences”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Sample text here...</span><br></pre></td></tr></table></figure>
-<p>Syntax highlighting</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = <span class="function"><span class="keyword">function</span> (<span class="params">bar</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> bar++;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(foo(<span class="number">5</span>));</span><br></pre></td></tr></table></figure>
-<h2 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>data</td>
-<td>path to data files to supply the data that will be passed into templates.</td>
-</tr>
-<tr>
-<td>engine</td>
-<td>engine to be used for processing templates. Handlebars is the default.</td>
-</tr>
-<tr>
-<td>ext</td>
-<td>extension to be used for dest files.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Right aligned columns</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:right">Option</th>
-<th style="text-align:right">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">data</td>
-<td style="text-align:right">path to data files to supply the data that will be passed into templates.</td>
-</tr>
-<tr>
-<td style="text-align:right">engine</td>
-<td style="text-align:right">engine to be used for processing templates. Handlebars is the default.</td>
-</tr>
-<tr>
-<td style="text-align:right">ext</td>
-<td style="text-align:right">extension to be used for dest files.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h2><p><a href="http://dev.nodeca.com" target="_blank" rel="noopener">link text</a></p>
-<p><a href="http://nodeca.github.io/pica/demo/" target="_blank" rel="noopener" title="title text!">link with title</a></p>
-<p>Autoconverted link <a href="https://github.com/nodeca/pica" target="_blank" rel="noopener">https://github.com/nodeca/pica</a> (enable linkify to see)</p>
-<h2 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h2><p><img src="https://octodex.github.com/images/minion.png" alt="Minion"><br><img src="https://octodex.github.com/images/stormtroopocat.jpg" alt="Stormtroopocat" title="The Stormtroopocat"></p>
-<p>Like links, Images also have a footnote style syntax</p>
-<p><img src="https://octodex.github.com/images/dojocat.jpg" alt="Alt text" title="The Dojocat"></p>
-<p>With a reference later in the document defining the URL location:</p>
-<h2 id="Plugins"><a href="#Plugins" class="headerlink" title="Plugins"></a>Plugins</h2><p>The killer feature of <code>markdown-it</code> is very effective support of<br><a href="https://www.npmjs.org/browse/keyword/markdown-it-plugin" target="_blank" rel="noopener">syntax plugins</a>.</p>
-<h3 id="Emojies"><a href="#Emojies" class="headerlink" title="Emojies"></a><a href="https://github.com/markdown-it/markdown-it-emoji" target="_blank" rel="noopener">Emojies</a></h3><blockquote>
-<p>Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:</p>
-<p>Shortcuts (emoticons): :-) :-( 8-) ;)</p>
-</blockquote>
-<p>see <a href="https://github.com/markdown-it/markdown-it-emoji#change-output" target="_blank" rel="noopener">how to change output</a> with twemoji.</p>
-<h3 id="Subscript-Superscript"><a href="#Subscript-Superscript" class="headerlink" title="Subscript / Superscript"></a><a href="https://github.com/markdown-it/markdown-it-sub" target="_blank" rel="noopener">Subscript</a> / <a href="https://github.com/markdown-it/markdown-it-sup" target="_blank" rel="noopener">Superscript</a></h3><ul>
-<li>19^th^</li>
-<li>H~2~O</li>
-</ul>
-<h3 id=""><a href="#" class="headerlink" title="\"></a><a href="https://github.com/markdown-it/markdown-it-ins" target="_blank" rel="noopener">\<ins></a></h3><p>++Inserted text++</p>
-<h3 id="-1"><a href="#-1" class="headerlink" title="\"></a><a href="https://github.com/markdown-it/markdown-it-mark" target="_blank" rel="noopener">\<mark></a></h3><p>==Marked text==</p>
-<h3 id="Footnotes"><a href="#Footnotes" class="headerlink" title="Footnotes"></a><a href="https://github.com/markdown-it/markdown-it-footnote" target="_blank" rel="noopener">Footnotes</a></h3><p>Footnote 1 link<sup><a href="#fn_first" id="reffn_first">first</a></sup>.</p>
-<p>Footnote 2 link<sup><a href="#fn_second" id="reffn_second">second</a></sup>.</p>
-<p>Inline footnote^[Text of inline footnote] definition.</p>
-<p>Duplicated footnote reference<sup><a href="#fn_second" id="reffn_second">second</a></sup>.</p>
-<blockquote id="fn_first">
-<sup>first</sup>. Footnote <strong>can have markup</strong><a href="#reffn_first" title="Jump back to footnote [first] in the text."> &#8617;</a>
-</blockquote>
-<pre><code>and multiple paragraphs.
-</code></pre><blockquote id="fn_second">
-<sup>second</sup>. Footnote text.<a href="#reffn_second" title="Jump back to footnote [second] in the text."> &#8617;</a>
-</blockquote>
-<h3 id="Definition-lists"><a href="#Definition-lists" class="headerlink" title="Definition lists"></a><a href="https://github.com/markdown-it/markdown-it-deflist" target="_blank" rel="noopener">Definition lists</a></h3><p>Term 1</p>
-<p>:   Definition 1<br>with lazy continuation.</p>
-<p>Term 2 with <em>inline markup</em></p>
-<p>:   Definition 2</p>
-<pre><code>    { some code, part of Definition 2 }
-
-Third paragraph of definition 2.
-</code></pre><p>_Compact style:_</p>
-<p>Term 1<br>  ~ Definition 1</p>
-<p>Term 2<br>  ~ Definition 2a<br>  ~ Definition 2b</p>
-<h3 id="Abbreviations"><a href="#Abbreviations" class="headerlink" title="Abbreviations"></a><a href="https://github.com/markdown-it/markdown-it-abbr" target="_blank" rel="noopener">Abbreviations</a></h3><p>This is HTML abbreviation example.</p>
-<p>It converts “HTML”, but keep intact partial entries like “xxxHTMLyyy” and so on.</p>
-<p>*[HTML]: Hyper Text Markup Language</p>
-<h3 id="Custom-containers"><a href="#Custom-containers" class="headerlink" title="Custom containers"></a><a href="https://github.com/markdown-it/markdown-it-container" target="_blank" rel="noopener">Custom containers</a></h3><p>::: warning<br><em>here be dragons</em><br>:::</p>
-<h2 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h2><p>In <a href="https://en.wikipedia.org/wiki/Physics" target="_blank" rel="noopener">physics</a>, <strong>mass–energy equivalence</strong> is the principle that anything having <a href="https://en.wikipedia.org/wiki/Mass" target="_blank" rel="noopener">mass</a> has an equivalent amount of <a href="https://en.wikipedia.org/wiki/Energy" target="_blank" rel="noopener">energy</a> and vice versa, with these fundamental quantities directly relating to one another by <a href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank" rel="noopener">Albert Einstein</a>‘s famous formula: $E=m c^2$.</p>
-<p>This is an array:</p>
-<script type="math/tex; mode=display">
-\begin{bmatrix}
-1 & 0 & 0\\ 
-0 & 1 & 0\\ 
-0 & 0 & 1
-\end{bmatrix}</script>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://konecho.xyz/2020/01/01/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Konecho">
-      <meta itemprop="description" content="这里什么都没有">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konecho's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/01/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-01 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-01T00:00:00+08:00">2020-01-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-23 12:52:20" itemprop="dateModified" datetime="2020-05-23T12:52:20+08:00">2020-05-23</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-
-
-
-          </div>
-          
-
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Konecho</p>
-  <div class="site-description" itemprop="description">这里什么都没有</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">5</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/konecho" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;konecho" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:konecho@outlook.com" title="E-Mail → mailto:konecho@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-  </div>
-
-
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Konecho</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
     (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
 </script>
 
-    
-
-  
-
-</body>
+    </body>
 </html>
